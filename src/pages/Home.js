@@ -1,11 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
+import Hero from "../components/Hero";
+import Banner from "../components/Banner";
+import {Link} from "react-router-dom";
 
-export default class Home extends Component {
-    render() {
-        return (
-            <div>
-                Hello home pages
-            </div>
-        );
-    }
+export default function Home(){
+        return <Hero>
+            <Banner title="Luxvile rooms" subtitle="deluxe rooms starting at $339">
+            <Link to="/rooms" className="btn-primary" >
+                our rooms
+            </Link>
+            </Banner>
+        </Hero>
 }

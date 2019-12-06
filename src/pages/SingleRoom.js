@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class SingleRoom extends Component {
-    render() {
+export default function SingleRoom (){
         return (
             <div>
                 Hello Single Room page
             </div>
         );
-    }
 }
